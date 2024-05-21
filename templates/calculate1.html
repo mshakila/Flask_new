@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<title> "Document"</title>
+<body>
+    <div class="calculate1">
+        <h1>Calculate Average MArks</h1>
+
+        <!-- Main input for ML query -->
+        <form action="{{url_for('calculate1')}}" method="post">
+            <input type="text" name="maths" placeholder="Maths" required="required" />
+            <input type="text" name="science" placeholder="Science" required="required" />
+            <input type="text" name="social" placeholder="Social" required="required" />
+
+            <button type="submit" class="btn btn-primary btn-block btn-large">Calculate Button</button>
+
+        </form>
+
+    </div>
+
+</body>
+</html>
+

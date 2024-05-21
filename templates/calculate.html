@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="calculate">
+        <h1>Calculate average marks</h1>
+
+        <!-- Main Input for receiving query to our ML -->
+        <form action="{{ url_for('calculate')}}" method="post">
+            <input type="text" name="maths" placeholder="Maths" required="required" />
+            <input type="text" name="science" placeholder="Science" required="required">
+            <input type="text" name="social" placeholder="Social" required="required">
+            <input type="text" name="kannada" placeholder="Kannada" required="'required">
+
+            <button type="submit" class="btn btn-primary btn-block btn-large">Calculate Button</button>
+
+        </form>
+    
+
+
+    </div>
+    
+</body>
+</html>
